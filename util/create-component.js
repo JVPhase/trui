@@ -1,3 +1,4 @@
+// codebeat:disable
 require('colors');
 const fs = require('fs');
 const templates = require('./templates');
@@ -49,3 +50,4 @@ fs.readFile('./src/index.ts', 'utf8', function (err, data) {
 });
 
 console.log('Successfully created component under: ' + componentDirectory.green); // eslint-disable-line no-console
+// codebeat:enable
