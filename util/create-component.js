@@ -42,9 +42,7 @@ fs.readFile('./src/index.ts', 'utf8', function (err,data) {
     ' };',
     `, ${componentName} };`
   );
-  fs.writeFile('./src/index.ts', result, 'utf8', function (err) {
-    if (err) return console.log(err);
-  });
+  fs.writeFile('./src/index.ts', result, 'utf8', function () { });
 });
 
 console.log(
