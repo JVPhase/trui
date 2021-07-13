@@ -3,10 +3,10 @@ module.exports = (componentName) => ({
 
 import ${componentName} from './${componentName}';
 export default {
-    title: 'trui/${componentName}',
-    component: ${componentName}
+  title: 'trui/${componentName}',
+  component: ${componentName}
 };
 export const Template = () => <${componentName} />;
 `,
-  extension: `.stories.tsx`
+  extension: '.stories.tsx'
 });

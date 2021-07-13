@@ -16,5 +16,5 @@ const ${componentName}: React.FunctionComponent<${componentName}Props> = (props:
 
 export default ${componentName};
 `,
-  extension: `.tsx`
+  extension: '.tsx'
 });

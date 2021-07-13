@@ -6,5 +6,5 @@ module.exports = (componentName) => ({
   color: $trui-green;
 }
 `,
-  extension: `.scss`
+  extension: '.scss'
 });

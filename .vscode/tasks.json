@@ -7,6 +7,22 @@
 			"problemMatcher": [],
 			"label": "npm: storybook",
 			"detail": "start-storybook -p 6006"
+		},
+		{
+			"type": "npm",
+			"script": "test",
+			"group": "test",
+			"problemMatcher": [],
+			"label": "npm: test",
+			"detail": "jest"
+		},
+		{
+			"type": "npm",
+			"script": "build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build",
+			"detail": "rollup -c"
 		}
 	]
 }
