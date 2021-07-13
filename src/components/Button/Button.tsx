@@ -11,8 +11,8 @@ const Button: React.FunctionComponent<ButtonProps> = (props: ButtonProps) => {
       data-testid="Button"
       className={[
         'trui-button',
-        `trui-button--${ size || 'medium' }`,
-        `trui-button--${ primary ? 'primary' : 'secondary' }`
+        `trui-button--${size || 'medium'}`,
+        `trui-button--${primary ? 'primary' : 'secondary'}`
       ].join(' ')}
       >
         { text || 'Button' }
