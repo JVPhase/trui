@@ -1,4 +1,3 @@
-// codebeat:disable
 require('colors');
 const fs = require('fs');
 const templates = require('./templates');
@@ -6,15 +5,12 @@ const templates = require('./templates');
 const componentName = process.argv[2];
 
 if (!componentName) {
-  console.error('Please supply a valid component name'.red); // eslint-disable-line no-console
   process.exit(1);
 }
-console.log('Creating Component Templates with name: ' + componentName); // eslint-disable-line no-console
 
 const componentDirectory = `./src/components/${componentName}`;
 
 if (fs.existsSync(componentDirectory)) {
-  console.error(`Component ${componentName} already exists.`.red); // eslint-disable-line no-console
   process.exit(1);
 }
 
@@ -48,6 +44,3 @@ fs.readFile('./src/index.ts', 'utf8', function (err, data) {
     return false;
   });
 });
-
-console.log('Successfully created component under: ' + componentDirectory.green); // eslint-disable-line no-console
-// codebeat:enable

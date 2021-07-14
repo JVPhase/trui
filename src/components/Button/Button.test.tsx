@@ -1,3 +1,4 @@
+// codebeat:disable[LOC]
 import React from 'react';
 import { render } from '@testing-library/react';
 
@@ -33,4 +34,14 @@ describe('Button Component', () => {
 
     expect(Button).toHaveClass('trui-button--secondary');
   });
+
+  it('should have default medium size and default text', () => {
+    props = { };
+    const { getByTestId } = renderComponent();
+
+    const Button = getByTestId('Button');
+
+    expect(Button).toHaveClass('trui-button--secondary');
+  });
 });
+// codebeat:enable[LOC]
