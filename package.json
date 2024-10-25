@@ -42,7 +42,7 @@
     "react-dom": ">=16.8.0"
   },
   "devDependencies": {
-    "@babel/core": "7.14.6",
+    "@babel/core": "7.26.0",
     "@rollup/plugin-commonjs": "19.0.0",
     "@rollup/plugin-node-resolve": "13.0.0",
     "@storybook/addon-actions": "6.3.4",
